@@ -37,10 +37,10 @@ footer a{
     color: black;
     text-decoration: nome;
 }
-
+ 
 /*RODAPE*/
 
-body{
+body {
     flex-direction: column;
     display: flex;
     background-color:rgb(90, 128, 99)
