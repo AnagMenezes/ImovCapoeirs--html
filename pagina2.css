@@ -1,0 +1,103 @@
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecario{
+    padding: 20px 60px;
+}
+
+.menu{
+    text-align: right;
+    
+}
+
+.menu a{
+    text-decoration:none;
+    background-color: #f0f0f07e; 
+    color:black;
+    padding:10px 20px;
+    border-radius:6px;
+    font-weight:bold;
+    margin-left:10px;
+}
+
+header{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px 40px;
+    box-sizing: border-box;
+}
+
+
+.logo img{
+    height:60px;
+}
+
+/* CABEÇARIO*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(90, 128, 99);
+    text-align: center;
+}
+
+footer a{
+    color: black;
+    text-decoration: nome;
+}
+ 
+/*RODAPE*/
+
+body {
+    flex-direction: column;
+    display: flex;
+    background-color:rgba(176, 189, 179, 0.747)
+}
+
+/*IMOVEL*/
+.imovel {
+    display: flex;          
+    align-items: center;     
+    gap: 30px;                
+    background-color:rgba(170, 170, 170, 0.589);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.imovel img {
+    width: 350px;
+    border-radius: 8px;
+}
+
+.info-imovel {
+    max-width: 400px;
+}
+
+.info-imovel h2 {
+    margin-bottom: 10px;
+}
+
+.info-imovel p {
+    margin-bottom: 15px;
+}
+
+/*IMOVEL*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color:rgba(170, 170, 170, 0.589);
+    text-align: center;
+}
+
+footer a{
+    color: black;
+    text-decoration: nome;
+}
