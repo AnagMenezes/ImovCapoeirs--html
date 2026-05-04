@@ -1,0 +1,23 @@
+* {
+    font-family: 'Montserrat', sans-serif; /* Aplica a fonte em tudo */
+}
+
+/* Deixando os títulos mais fortes */
+h1, h3 {
+    font-weight: 700; /* Peso bem negrito */
+    color: #1A365D;   /* Aquele nosso azul marinho */
+    letter-spacing: -0.5px; /* Deixa o título mais elegante */
+}
+
+/* Deixando os textos de descrição mais leves */
+p {
+    font-weight: 400;
+    line-height: 1.6; /* Aumenta o espaço entre linhas, melhora a leitura */
+    color: #4A5568;   /* Um cinza escuro, menos cansativo que o preto puro */
+}
+
+/* Destaque para o preço */
+.preco {
+    font-weight: 700;
+    color: #2B6CB0;
+}

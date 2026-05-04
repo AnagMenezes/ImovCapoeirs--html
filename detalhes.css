@@ -1,7 +1,3 @@
-* {
-    font-family: 'Montserrat', sans-serif; /* Aplica a fonte em tudo */
-}
-
 header{
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
@@ -11,10 +7,11 @@ header{
     align-items:center;
     padding:20px 40px;
     box-sizing: border-box;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.562);
     border-bottom: 2px solid #898d94d3;
     margin: auto;
     background-color: #b4bfccbd;
+  
 }
 
 header a {
@@ -56,7 +53,7 @@ header a {
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* CABEÇARIO*/
+/*CABECARIO*/
 
 main{
     flex:1;
@@ -72,7 +69,64 @@ body {
 
 /*CORPO*/
 
-/*IMOVEL*/
+/* CONTAINER */
+
+
+.container-geral {
+    background-color: rgba(255, 255, 255, 0.95); 
+    max-width: 1000px;
+    margin: 50px auto; 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+    display: flex; 
+    gap: 60px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* FOTO */
+
+.galeria img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* INFO */
+
+.info{
+    max-width:450px;
+}
+
+.preco{
+    font-size:28px;
+    font-weight:bold;
+    color:#3c6b45;
+}
+
+.dados{
+    margin:20px 0;
+}
+
+.Bcontato{
+    margin-top:20px;
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    background:#1A365D;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.Bcontato:hover{
+    transform:scale(1.05);
+    background:#2e4b74;
+}
+
+/* FOOTER */
 
 footer {
     width: 100%;
@@ -86,65 +140,6 @@ footer a{
     text-decoration: none;
 }
 
-/*RODAPE*/
-
-/*CARDS*/
-
-.detalhe{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background: #1A365D;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: 0.3s;
+* {
+    font-family: 'Montserrat', sans-serif; 
 }
-
-.detalhe:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
-    background:#fff3e0;
-}
-
-.grid-imoveis{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-    padding: 40px 20px;
-    
-}
-.card-imovel{
-    background: #F1F5F9;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: 0.3s;
-}
-
-.card-imovel:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-}
-
-.card-imovel img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-info{
-    padding: 20px;
-}
-
-.card-info h3{
-    margin-bottom: 10px;
-}
-
-.card-info p{
-    color: #555;
-    margin-bottom: 15px;
-}
-
-

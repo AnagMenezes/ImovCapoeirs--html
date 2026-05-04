@@ -17,33 +17,27 @@ header{
     height:60px;
 }
 
-.cabecario{
-    padding: 20px 60px;
-}
-
 .menu{
     text-align: right;
 }
 
 .menu a{
+    display: inline-block;
     text-decoration:none;
-    background-color: #f0f0f07e; 
-    color:black;
-    padding:10px 20px;
-    border-radius:6px;
+    color:rgb(255, 255, 255);
     font-weight:bold;
     margin-left:10px;
-    background: rgba(255,255,255,0.15);
+    background-color:rgb(49, 88, 119);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255,255,255,0.4);
     padding: 12px 25px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s; 
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
-
+ 
 .menu a:hover{
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-6px) scale(1.08);
     background: rgba(255,255,255,0.25);
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
@@ -52,35 +46,41 @@ header{
 
 
 
-body {
-    flex-direction: column;
-    display: flex;
-    background-color:rgb(202, 202, 202)
+main{
+    flex:1;
 }
 
-body {
-    margin: 0;
-    background-image: url("capoeirasFundo.1.png"); 
+body{
+  margin: 0;
+    background: linear-gradient(rgba(32, 60, 100, 0.6), rgba(26, 54, 93, 0.6)), 
+    url('capoeirasFundo.1.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    backdrop-filter: blur(5px);
 }
 
 /*CORPO*/
 
+footer{
+    background:#ffffff00;
+    text-align:center;
+    padding:20px;
+    color:white;
+    margin-top: 50px;
+}
 
-footer {
-    width: 100%;
-    height: auto;
-
+.footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
     text-align: center;
 }
-
-footer a{
-    color: black;
-    text-decoration: none;
+.footer p{
+    color: white;
 }
-
 
 /*RODAPE*/
 
@@ -90,31 +90,32 @@ footer a{
     gap: 40px;            
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 60px;
     width: 100%;      
-    margin-right: 60px;
+    margin-right: 0px;
 }
 
 .cardTipo {
     width: 500px;
-    height: 100px;        
-    background-color: #f0f0f07e; 
+    height: 80px;        
+    background-color:#f0f0f07e; 
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(50, 71, 141, 0.315);
     cursor: pointer;
     transition: 0.3s;
-    margin-right: 60px;
+    margin-top: -30px;
+    
 }
 
 .cardTipo a{
     text-decoration: none;      
-    background-color: #f0f0f07e; 
-    color: black;
+    background-color: #51567400; 
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     border-radius: 6px;
     text-decoration: none;
@@ -131,7 +132,7 @@ footer a{
 }
 
 .cardTipo{
-    background: rgba(255,255,255,0.15);
+    background: rgb(49, 88, 119);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255,255,255,0.4);
     padding: 12px 25px;
@@ -141,3 +142,38 @@ footer a{
 }
 
 /*CARDS*/
+
+
+
+.introducao {
+  max-width: 80%; 
+  width: 100%;
+  margin-top: -30px; 
+  margin-left: 60px;   
+  margin-bottom: 20px;
+  
+  padding: 20px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.introducao h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.introducao p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+  
+
+* {
+    font-family: 'Montserrat', sans-serif; /* Aplica a fonte em tudo */
+}
+
+/*INTRODUÇÃO*/
