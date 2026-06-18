@@ -1,0 +1,94 @@
+
+header {
+    max-width: 100%; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 30px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-bottom: 2px solid #2D3748;
+    margin: auto;
+    background-color: #b4bfccbd;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1); 
+}
+
+header a {
+    color: #ffffff;
+    font-weight: 500;
+}
+.logo img {
+    height: 20px;
+    width: auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu a {
+    display: flex;   
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 15px; 
+    background-color: rgb(49, 88, 119); 
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.4);
+    white-space: nowrap;
+    
+    padding: 10px 20px; 
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.menu a:hover {
+    transform: translateY(-4px) scale(1.05); 
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+/*cabecario*/
+
+
+footer{
+    background:#ffffff00;
+    text-align:center;
+    padding:20px;
+    color:white;
+    margin-top: 50px;
+}
+
+.footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+.footer p{
+    color: white;
+}
+
+
+main{
+    flex:1;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif; /* Aplica a fonte em tudo */
+}
