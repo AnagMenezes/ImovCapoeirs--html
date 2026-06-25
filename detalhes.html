@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Imóvel</title>
-    <link rel="stylesheet" href="detalhes.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/detalhes.css">
 </head>
 <body>
 
 <header>
-    <img src="imovCapoirass-removebg-preview - Editado.png" class="logo">
+    <img src="imagens/imovCapoirass-removebg-preview - Editado.png" class="logo">
 
     <nav class="menu">
         <a href="paginaHome.html">Início</a>
@@ -20,40 +21,55 @@
 
 <main class="container-geral">
 
-    <section class="galeria">
-        <img src="casaG.png" alt="Casa 1">
-    </section>
-    
+   <section class="galeria">
+    <button class="prev">❮</button>
+
+    <img
+        id="imagens"
+        class="imagem-carrossel"
+        src=""
+        alt="Imagem do imóvel"
+        data-index="0"
+        data-imagens=""
+    >
+
+    <button class="next">❯</button>
+</section>
+
     <div class="conteudo">
-        <h1>Casa disponível para aluguel</h1>
-        <p class="preco">R$ 1.800 / mês</p>
-    
+
+        <h1 id="titulo"></h1>
+        <p class="preco" id="preco"></p>
 
         <div class="detalhes">
             <h3>Área</h3>
-            <p>32m²</p>
+            <p id="area"></p>
 
             <h3>Cômodos</h3>
-            <p>3 quartos | 2 banheiros | 1 vaga | 120m²</p>
+            <p id="comodos"></p>
         </div>
 
         <h3>Endereço</h3>
-        <p>Rua Exemplo, 123 - Capoeiras, Florianópolis</p>
+        <p id="endereco"></p>
 
         <h3>Descrição</h3>
-        <p>Casa ampla, arejada e bem iluminada, próxima a tudo.</p>
+        <p id="descricao"></p>
 
-        <div class="contato">
-            <p><strong>📞 (48) 99999-9999</strong></p>
-            <button class="Bcontato">Entrar em contato</button>
-            
-        </div>
+       <div class="contato">
+    <p><strong id="telefone"></strong></p>
+    
+    <a id="botao-whatsapp" class="Bcontato" target="_blank">Entrar em contato</a>
+</div>
+
+    </div>
 
 </main>
 
 <footer>
     <p>© 2026 ImovCapoeiras</p>
 </footer>
+
+<script src="cardsImoveis.js"></script>
 
 </body>
 </html>

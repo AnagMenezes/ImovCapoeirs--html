@@ -1,0 +1,106 @@
+body{
+    flex-direction: column;
+    display: block;
+    background: linear-gradient(
+        rgba(255,255,255,0.7),
+        rgba(163,165,167,0.7)
+    );
+    background-size: cover;
+}
+
+.container-geral{
+    background-color: rgba(255,255,255,0.95);
+    width: min(90%, 1100px);
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.galeria{
+    flex: 1;
+    min-width: 350px;
+    position: relative;
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.galeria .imagem-carrossel{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.galeria:hover .prev,
+.galeria:hover .next{
+    opacity: 1;
+    visibility: visible;
+}
+
+.info{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.preco{
+    font-size: 28px;
+    font-weight: bold;
+    color: #3c6b45;
+}
+
+.dados{
+    margin: 20px 0;
+}
+
+.Bcontato {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1a365d; 
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.Bcontato:hover{
+    transform: scale(1.05);
+    background: #2e4b74;
+}
+
+.conteudo {
+  position: relative; 
+  padding-bottom: 80px; 
+}
+
+.contato {
+  position: absolute;
+  bottom: 25px;  
+  right: 25px;  
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+}
+
+.Bcontato {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #16325c; 
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
