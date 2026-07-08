@@ -1,23 +1,11 @@
-
 header {
-    max-width: 100%; 
-    width: 100%;
-    display: flex;
+display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px 30px; 
-    box-sizing: border-box;
-    border-radius: 10px;
-    border-bottom: 2px solid #2D3748;
-    margin: auto;
-    background-color: #b4bfccbd;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1); 
+    padding: 25px 5% 15px 5%;
+    background: transparent; 
 }
 
-header a {
-    color: #ffffff;
-    font-weight: 500;
-}
 .logo img {
     height: 20px;
     width: auto;
@@ -32,7 +20,7 @@ header a {
 .menu {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 20px;
 }
 
 .menu a {
@@ -45,7 +33,6 @@ header a {
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255,255,255,0.4);
     white-space: nowrap;
-    
     padding: 10px 20px; 
     border-radius: 12px;
     cursor: pointer;
@@ -71,10 +58,10 @@ footer{
     text-decoration: none;
     text-align: center;
 }
+
 .footer p{
     color: white;
 }
-
 
 main{
     flex:1;
@@ -88,7 +75,7 @@ body{
 }
 
 * {
-    font-family: 'Montserrat', sans-serif; /* Aplica a fonte em tudo */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .carrossel{
@@ -106,34 +93,25 @@ body{
     display: block;
 }
 
-
 .prev,
 .next{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
     background-color: white;
     color: #222;
     border: 1px solid #ddd;
-
     width: 32px;
     height: 32px;
     border-radius: 50%;
-
     font-size: 14px;
     font-weight: bold;
-
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     z-index: 5;
-
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
     opacity: 0;
     visibility: hidden;
     transition: all 0.25s ease-in-out;
@@ -152,7 +130,6 @@ body{
     opacity: 1;
     visibility: visible;
 }
-
 
 .prev:hover,
 .next:hover{

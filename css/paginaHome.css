@@ -1,85 +1,218 @@
-body{
-    background: linear-gradient(rgba(32, 60, 100, 0.6), rgba(26, 54, 93, 0.6)),
+body {
+    background: linear-gradient(to right, 
+        rgb(136, 158, 180) 0%,      
+        rgba(179, 195, 219, 0.62) 40%,   
+        rgba(132, 157, 192, 0.44) 100%     
+    ), 
     url("../imagens/capoeirasFundo.1.png");  
+    
     background-size: cover;
-    background-position: center;
+    background-position: right center; 
     background-repeat: no-repeat;
-    backdrop-filter: blur(2px);
-}
-
-.caixaCards {
-    display: flex;
-    flex-direction: column;   
-    gap: 40px;            
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    width: 100%;      
-    margin-right: 0px;
-}
-
-.cardTipo {
-    width: 400px;
-    height: 70px;        
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: -30px;
-
-    background: rgb(49, 88, 119);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 12px 25px; 
-
-    border-radius: 20px; 
-    box-shadow: 0 4px 10px rgba(50, 71, 141, 0.315);
-    cursor: pointer;
-    transition: 0.3s;
-}
- 
-.cardTipo a{
-    text-decoration: none;      
-    background-color: #51567400; 
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 35px;
-}
- 
-.cardTipo:hover{
-    transform: translateY(-5px) scale(1.05);
-    background: rgba(255,255,255,0.25);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: sans-serif;
 }
 
 .introducao {
-  max-width: 80%; 
-  width: 100%;
-  margin-top: -30px; 
-  margin-left: 60px;   
-  margin-bottom: 20px;
-  
-  padding: 30px;
-  text-align: left;
-  color: #ffffff;
+    padding: 20px 0;
+    color: #fafafa;
 }
 
-.introducao h2 {
-  font-size: 2rem;
-  margin-bottom: 16px;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+.introducao h3 {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.69); 
+    margin-top: 0;
+}
+
+.introducao h3 span {
+    color: #145386; 
+    font-weight: 800;
+    text-shadow: none;
 }
 
 .introducao p {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.71);
 }
-  
+
+.caixaCards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* <-- esquerda */
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.cardTipo{
+    width: 400px;
+    height: 95px;
+    background: rgba(45, 86, 119, .92);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,.18);
+    transition: .25s;
+    backdrop-filter: blur(8px);
+}
+
+.cardTipo:hover{
+    transform: translateY(-5px);
+    background:#3b6b90;
+    box-shadow:0 18px 35px rgba(0,0,0,.25);
+}
+
+.icone{
+    font-size:32px;
+    margin-right:20px;
+}
+
+.textoCard{
+    flex:1;
+}
+
+.textoCard h4{
+    margin:0;
+    font-size:1.45rem;
+    font-weight:700;
+}
+
+.textoCard p{
+    margin-top:6px;
+    color:#d6e2ec;
+    font-size:.95rem;
+}
+
+.cardTipo span{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.containerPrincipal-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    gap: 50px;
+}
+
+.containerMetade-left {
+    flex: 1.1;
+    max-width: 550px;
+}
+
+.containerMetade-right {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-contato {
+    background: #e2e2e6;
+    border-radius: 24px;
+    padding: 25px;
+    width: 100%;
+    max-width: 360px; 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+.contato-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.balao-emoji {
+    font-size: 36px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contato-header h3 {
+    color: #0f172a;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.contato-header p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.contato-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.link-opcao-contato {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.link-opcao-contato:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.whats {
+    background-color: #ffffff;
+}
+.whats strong { color: #16a34a; }
+
+.fone {
+    background-color: #ffffff;
+}
+.fone strong { color: #4f46e5; }
+
+.icone-meio {
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+.opcao-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.opcao-texto strong {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.opcao-texto span {
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+@media (max-width: 850px) {
+    .containerPrincipal-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .containerMetade-left, .containerMetade-right {
+        width: 100%;
+        max-width: 100%;
+    }
+}

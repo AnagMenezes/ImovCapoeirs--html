@@ -56,7 +56,8 @@ body{
 .preco{
     font-size: 28px;
     font-weight: bold;
-    color: #3c6b45;
+    color: #2e7d32; 
+    font-weight: 700;
 }
 
 .dados{
@@ -103,4 +104,27 @@ body{
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+}
+
+.detalhes-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.detalhes-imagens {
+    flex: 1; 
+    max-width: 50%;
+}
+
+.detalhes-info {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

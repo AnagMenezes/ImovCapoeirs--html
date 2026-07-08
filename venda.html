@@ -20,8 +20,13 @@
         </nav>
 
     </header>
-
+   
 <main>
+   <div class="filtro-preco">
+    <input type="number" id="preco-min" placeholder="Preço Mínimo">
+    <input type="number" id="preco-max" placeholder="Preço Máximo">
+    <button onclick="filtrarPorPreco()">Filtrar Preço</button>
+</div>
     <section class="grid-imoveis" id="grid-imoveis" data-pagina="venda"></section>     
 </main>
 

@@ -4,99 +4,97 @@ const imoveis = [
         tipo: "aluguel",
         titulo: "Casa disponível para aluguel",
         imagens: [
-            "imagens/casaG.png", "imagens/casa 1 de aluguel.jpg", "imagens/casaG.png"],
-        descricao: "Casa ampla, arejada e bem iluminada, próxima a tudo. gjygjggugug ougigig 7tguu6fu fru6fu 66r  6r6r6r76r7 67r76r7 6r67r5e7 6r76e65e5i dud",
-        preco: "R$ 1.800",
-        area: "32m²",
-        comodos: "3 quartos | 2 banheiros | 1 vaga | varanda",
-        endereco: "Rua Exemplo 1, 123 - Capoeiras",
-        telefone: "5587999072131",
+            "imagens/aluguel1.png", "imagens/aluguel2.png", "imagens/aluguel3.png", "imagens/aluguel4.png", "imagens/aluguel5.png"],
+        descricao: "Casa pequena, bem iluminada, ideal para estudantes.",
+        preco: "R$ 400,00/mês",
+        area: "30m²",
+        comodos: "2 quartos | 1 banheiros | 1 cozinha ",
+        endereco: "Rua 1 de dezembro, centro, n° 13, Capoeiras/PE, CEP 55.365-000",
+        telefone: "558781546934",
     },
         {
         id: 2,
         tipo: "aluguel",
         titulo: "Apartamento disponível para aluguel",
         imagens: [
-            "imagens/casaG.png"
+            "imagens/2.1aluguel.png", "imagens/2.2aluguel.png", "imagens/2.3aluguel.jpeg"
         ],
-        descricao: "Casa ampla, arejada e bem iluminada, próxima a tudo. hbbubiubiubub jbiuububub ubiubiubibu ubiubiubiu iuuh uiuhkk",
-        preco: "R$ 1.800",
-        area: "32m²",
-        comodos: "3 quartos | 2 banheiros | 1 vaga | varanda",
-        endereco: "Rua Exemplo 2, 123 - Capoeiras",
-       
+        descricao: "Casa ampla, ideal para casal, muito bem localizada, não é permitido pets",
+        preco: "R$ 600,00/mês",
+        area: "40m²",
+        comodos: "2 quartos | 1 banheiros | 1 cozinha | varanda",
+        endereco: "Rua Anelson Rodrigues, n° 290, Cohab II, Capoeiras/PE",
+        telefone: "558799462197"
     },
     {
         id: 3,
         tipo: "aluguel",
-        titulo: "Kitnet aconchegante para aluguel",
-        imagens: ["imagens/casaG.png"],
-        descricao: "Casa ampla, arejada e bem iluminada, próxima a tudo.",
-        preco: "R$ 1.800",
-        area: "32m²",
-        comodos: "3 quartos | 2 banheiros | 1 vaga | varanda",
-        endereco: "Rua Exemplo 3, 123 - Capoeiras",
-        
+        titulo: "Casa grande para aluguel",
+        imagens: ["imagens/3.1aluguel.jpeg", "imagens/3.2aluguel.jpeg", "imagens/3.3aluguel.jpeg", "imagens/3.4aluguel.jpeg", "imagens/3.5aluguel.jpeg"],
+        descricao: "Casa grande e luxuosa, arejada e bem iluminada, ideal para famílias grandes que buscam conforto.",
+        preco: "R$ 2.000,00/mês",
+        area: "110m²",
+        comodos: "4 quartos | 2 banheiros | 1 vaga para garagem | área de serviço | 1 cozinha",
+        endereco: "Rua Professor Eurides Pinto, n°209, Centro, Capoeiras/PE, CEP 55.365-000",
+        telefone: "8799261324"
     },
     {
         id: 4,
         tipo: "aluguel",
-        titulo: "Casa de praia para aluguel",
-        imagens: ["imagens/casaG.png"],
-        descricao: "Casa ampla, arejada e bem iluminada, próxima a tudo.",
-        preco: "R$ 1.800",
-        area: "32m²",
-        comodos: "3 quartos | 2 banheiros | 1 vaga | varanda",
-        endereco: "Rua Exemplo 4, 123 - Capoeiras",
-        
+        titulo: "Ponto comercial para aluguel",
+        imagens: ["imagens/estabelecimento1.jpeg", "imagens/estabelecimento2.jpeg"],
+        descricao: "Salão bem localizado e arejado.",
+        preco: "R$ 600,00/mês",
+        area: "35m²",
+        comodos: "1 salão amplo | 1 banheiro ",
+        endereco: "Praça João Borrego, n° 45, Capoeiras/PE, CEP 55.365-000",
+        telefone: "8799665036"
     },
     {
         id: 5,
         tipo: "venda",
-        titulo: "Casa de praia para venda",
-        imagens: ["imagens/casaG.png"],
-        descricao: "Casa ampla, arejada e bem iluminada, próxima a tudo.",
-        preco: "R$ 1.800",
-        area: "32m²",
-        comodos: "3 quartos | 2 banheiros | 1 vaga | varanda",
-        endereco: "Rua Exemplo 5, 123 - Capoeiras",
-      
+        titulo: "Casa à venda",
+        imagens: ["imagens/IMAGEMruaprojetadan35.jpeg"],
+        descricao: "Casa ampla, arejada e bem localizada. Aberto a negociações pelo contato. ",
+        preco: "R$ 57.891",
+        area: "200m²",
+        comodos: "3 quartos | 1 banheiro | 1 vaga para garagem| área de serviço | 1 sala | 1 cozinha",
+        endereco: "Rua Projetada, Nº 35, Centro, Capoeiras/PE, CEP 55.365-000",
+        telefone: "1120870781",
     },
     {
         id: 6,
         tipo: "venda",
-        titulo: "Casa de praia para venda",
-        imagens: ["imagens/casaG.png"],
-        descricao: "Casa ampla, arejada e bem iluminada, próxima a tudo.",
-        preco: "R$ 1.800",
-        area: "32m²",
-        comodos: "3 quartos | 2 banheiros | 1 vaga | varanda",
-        endereco: "Rua Exemplo 6, 123 - Capoeiras",
-
+        titulo: "Casa grande à venda",
+        imagens: ["imagens/Aprigio.250.0.jpeg", "imagens/Aprigio.250.6.jpeg", "imagens/Aprigio250.1.jpeg", "imagens/Aprigio.250.2.jpeg", "imagens/Aprigio250.3.jpeg", "imagens/Aprigio.250.4.jpeg", "imagens/Aprigio.250.7.jpeg"],
+        descricao: "Casa ampla, arejada e bem iluminada. Casa espaçosa ideal para famílias, localizada no centro.",
+        preco: "R$ 110.000",
+        area: "300m²",
+        comodos: "3 quartos | 1 banheiros | 1 vaga para garagem | varanda espaçosa | 1 cozinha | 1 sala",
+        endereco: "Rua Aprígio Inácio Cordeiro, Nº 250, Centro, Capoeiras/PE, CEP 55.365-000",
+        telefone: "81995074310",
     },
     {
         id: 7,
         tipo: "venda",
-        titulo: "Casa de praia para venda",
-        imagens: ["imagens/casaG.png"],
-        descricao: "Casa ampla, arejada e bem iluminada, próxima a tudo.",
-        preco: "R$ 1.800",
-        area: "32m²",
-        comodos: "3 quartos | 2 banheiros | 1 vaga | varanda",
-        endereco: "Rua Exemplo 7, 123 - Capoeiras",
-       
+        titulo: "Terreno disponível para venda ou troca",
+        imagens: ["imagens/terreno1.jpeg", "imagens/terreno2.jpeg", "imagens/terreno3.jpeg"],
+        descricao: "Terreno grande em bairro seguro, disponível para venda ou troca.",
+        preco: "R$ 60.000,00",
+        area: "200m²",
+        endereco: "Rua Águas belas, S/N, Maria Zelia, Capoeiras/PE, CEP 55.365-000.",
+        telefone: "8796112342"
     },
     {
         id: 8,
         tipo: "venda",
-        titulo: "Casa de praia para venda",
-        imagens: ["imagens/casaG.png"],
-        descricao: "Casa ampla, arejada e bem iluminada, próxima a tudo.",
-        preco: "R$ 1.800",
-        area: "32m²",
-        comodos: "3 quartos | 2 banheiros | 1 vaga | varanda",
-        endereco: "Rua Exemplo 8, 123 - Capoeiras",
-        
+        titulo: "Lote a venda",
+        imagens: ["imagens/loteamento.jpeg"],
+        descricao: "Disponível para venda ou troca",
+        preco: "R$ 50.000",
+        area: "70²",
+        endereco: "Loteamento Chico Batata, Araça, Capoeiras/PE, CEP 55.365-000.",
+        telefone: "8781457741"
     }
 
 ];
@@ -163,13 +161,13 @@ const paginaAtual = window.location.pathname;
     if (paginaAtual.includes("aluguel.html")) {
 
         const apenasAluguel = imoveis.filter(imovel => imovel.tipo === "aluguel");
-        tipoImoveis(apenasAluguel); // O configurarCarrossel() deve rodar no final de tipoImoveis
+        tipoImoveis(apenasAluguel); 
 
 } else if (paginaAtual.includes("venda.html")) {
     const apenasVenda = imoveis.filter(imovel => imovel.tipo === "venda");
     tipoImoveis(apenasVenda);
 } else if (paginaAtual.includes("detalhes.html")) {
-    carregarDetalhes(); // Certifique-se que configurarCarrossel() está na ULTIMA LINHA dentro de carregarDetalhes()
+    carregarDetalhes(); 
 } else {
     tipoImoveis(imoveis);
 }
@@ -201,5 +199,30 @@ function carregarDetalhes() {
     configurarCarrossel();
 }
 
+function filtrarPorPreco() {
+    const min = parseFloat(document.getElementById("preco-min").value) || 0;
+    const max = parseFloat(document.getElementById("preco-max").value) || Infinity;
+
+    const paginaAtual = window.location.pathname;
+    let imoveisFiltrados = imoveis;
+
+    if (paginaAtual.includes("aluguel.html")) {
+        imoveisFiltrados = imoveis.filter(imovel => imovel.tipo === "aluguel");
+    } else if (paginaAtual.includes("venda.html")) {
+        imoveisFiltrados = imoveis.filter(imovel => imovel.tipo === "venda");
+    }
+
+    const resultadoFinal = imoveisFiltrados.filter(imovel => {
+        const precoLimpo = parseFloat(imovel.preco.replace("R$", "").replace(/\./g, "").trim());
+        return precoLimpo >= min && precoLimpo <= max;
+    });
+
+    if (resultadoFinal.length === 0) {
+        alert("Nenhum imóvel foi encontrado nessa faixa de preço :(");
+        tipoImoveis([]); 
+    } else {
+        tipoImoveis(resultadoFinal);
+    }
+}
 
 
