@@ -50,11 +50,12 @@ body {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 5%;
     color: #ffffff;
     font-size: 14px;
+    gap: 20px;
 }
 
 .footer nav a {
