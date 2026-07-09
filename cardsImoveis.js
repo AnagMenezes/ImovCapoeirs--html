@@ -104,7 +104,9 @@ const grid = document.getElementById("grid-imoveis");
 function tipoImoveis(listaDeImoveis){
     if (!grid) return;
     grid.innerHTML = "";
+
     listaDeImoveis.forEach(imovel =>{
+
         grid.innerHTML += `
             <div class="card-imovel">
                <div class="carrossel" id="carrossel-${imovel.id}">
@@ -166,6 +168,7 @@ const paginaAtual = window.location.pathname;
 } else if (paginaAtual.includes("venda.html")) {
     const apenasVenda = imoveis.filter(imovel => imovel.tipo === "venda");
     tipoImoveis(apenasVenda);
+    
 } else if (paginaAtual.includes("detalhes.html")) {
     carregarDetalhes(); 
 } else {
